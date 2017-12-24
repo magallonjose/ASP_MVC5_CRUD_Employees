@@ -1,0 +1,28 @@
+﻿@model List<ASP_MVC5_CRUD_Employees.Models.Employee>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+@foreach(var e in Model)
+{
+    <ul>
+        <li>
+            @e.EmployeeID
+        </li>
+        <li>
+            @e.EmployeeName
+        </li>
+        <li>
+            @e.Designation
+        </li>
+        <li>
+            @e.Salary
+        </li>
+        <li>
+            @e.CreateDate
+        </li>
+    </ul>
+}
